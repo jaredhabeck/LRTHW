@@ -29,4 +29,4 @@ puts txt_again.read()
 txt_again.close()
 # additional notes, never knew =begin and =end were multiline comments
 # irb for some reason is saying some File methods are undefined like directory?
-# WHY?
+# TODO: WHY?
