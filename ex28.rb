@@ -27,12 +27,13 @@ test.each do |question, solution|
   puts "#{count}) #{question}"
   print '?> '
   answer = STDIN.gets.chomp
+  # simplest input check ever? if you can't answer correctly you answer false!
   answer = answer == "true" ? true : false;
   if (answer == solution)
     puts 'correct!'
     score += 1
   else
-    puts 'nope!'
+    puts '*incorrect*'
   end
   count += 1
   puts "Your score is #{score}/#{total}!";
